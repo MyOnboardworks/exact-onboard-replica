@@ -1,0 +1,47 @@
+import { Button } from "@/components/ui/button";
+import heroBackground from "@/assets/hero-background.jpg";
+
+const HeroSection = () => {
+  return (
+    <section 
+      className="relative min-h-screen flex items-center justify-start overflow-hidden"
+      style={{
+        backgroundImage: `url(${heroBackground})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-background/20" />
+      
+      <div className="relative z-10 container mx-auto px-6">
+        <div className="max-w-4xl">
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
+            <span className="text-gradient-hero">Build Skills Today, Get</span>
+            <br />
+            <span className="text-gradient-hero">Hired Tomorrow</span>
+          </h1>
+          
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl">
+            Get certified, build a portfolio, and connect directly with recruiters – all in one platform
+          </p>
+          
+          <Button 
+            size="lg" 
+            className="bg-gradient-to-r from-neon-blue to-neon-purple hover:from-neon-purple hover:to-neon-pink text-white px-8 py-6 text-lg rounded-lg glow-primary transition-all duration-300"
+          >
+            Get Started Today
+          </Button>
+        </div>
+      </div>
+      
+      {/* Floating elements */}
+      <div className="absolute top-20 right-10 w-20 h-20 bg-neon-cyan/20 rounded-full blur-xl animate-float" />
+      <div className="absolute bottom-20 right-40 w-32 h-32 bg-neon-purple/20 rounded-full blur-xl animate-float" style={{ animationDelay: '2s' }} />
+      <div className="absolute top-1/2 right-20 w-16 h-16 bg-neon-pink/20 rounded-full blur-xl animate-float" style={{ animationDelay: '4s' }} />
+    </section>
+  );
+};
+
+export default HeroSection;
