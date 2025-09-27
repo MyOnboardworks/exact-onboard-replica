@@ -6,10 +6,10 @@ const EcosystemSection = () => {
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">
             Our Ecosystem
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base text-muted-foreground max-w-3xl mx-auto">
             Together, we don't just promote learning—we engineer educational success at scale.
           </p>
         </div>
@@ -17,15 +17,15 @@ const EcosystemSection = () => {
         {/* Stats Cards */}
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* 200% More Interview Calls */}
-          <div className="bg-card border border-border rounded-2xl p-8 hover:border-neon-blue/50 transition-all duration-300 group">
+          <div className="bg-card border border-border rounded-xl p-6 hover:border-neon-green/50 transition-all duration-300 group">
             <div className="flex items-center mb-6">
-              <div className="p-4 bg-neon-blue/10 rounded-2xl mr-6">
-                <TrendingUp className="w-8 h-8 text-neon-blue" />
+              <div className="p-3 bg-neon-green/10 rounded-xl mr-4">
+                <TrendingUp className="w-6 h-6 text-neon-green" />
               </div>
-              <div className="text-6xl font-bold text-gradient-stats">200%</div>
+              <div className="text-4xl font-bold text-gradient-stats">200%</div>
             </div>
             
-            <h3 className="text-2xl font-bold mb-4">
+            <h3 className="text-lg font-bold mb-4">
               More Interview Calls – Job Seekers Transformed
             </h3>
             
@@ -37,15 +37,15 @@ const EcosystemSection = () => {
           </div>
 
           {/* 70% Career Growth */}
-          <div className="bg-card border border-border rounded-2xl p-8 hover:border-neon-purple/50 transition-all duration-300 group">
+          <div className="bg-card border border-border rounded-xl p-6 hover:border-emerald/50 transition-all duration-300 group">
             <div className="flex items-center mb-6">
-              <div className="p-4 bg-neon-purple/10 rounded-2xl mr-6">
-                <Award className="w-8 h-8 text-neon-purple" />
+              <div className="p-3 bg-emerald/10 rounded-xl mr-4">
+                <Award className="w-6 h-6 text-emerald" />
               </div>
-              <div className="text-6xl font-bold text-gradient-stats">70%</div>
+              <div className="text-4xl font-bold text-gradient-stats">70%</div>
             </div>
             
-            <h3 className="text-2xl font-bold mb-4">
+            <h3 className="text-lg font-bold mb-4">
               Career Growth – From Applications to Offers
             </h3>
             

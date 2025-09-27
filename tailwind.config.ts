@@ -58,12 +58,12 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         neon: {
-          blue: "hsl(var(--neon-blue))",
-          purple: "hsl(var(--neon-purple))",
-          pink: "hsl(var(--neon-pink))",
-          cyan: "hsl(var(--neon-cyan))",
           green: "hsl(var(--neon-green))",
-          orange: "hsl(var(--neon-orange))",
+          "green-light": "hsl(var(--neon-green-light))",
+          "green-dark": "hsl(var(--neon-green-dark))",
+          emerald: "hsl(var(--emerald))",
+          lime: "hsl(var(--lime))",
+          mint: "hsl(var(--mint))",
         },
       },
       borderRadius: {

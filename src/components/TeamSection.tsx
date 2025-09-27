@@ -28,18 +28,18 @@ const TeamSection = () => {
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="text-sm uppercase tracking-wider text-accent mb-2 font-semibold">
+          <div className="text-xs uppercase tracking-wider text-accent mb-2 font-semibold">
             The people behind the growth
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">
             Meet The Team
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+          <p className="text-base text-muted-foreground max-w-3xl mx-auto mb-6">
             A mix of creators, developers, and marketers - working together to build digital experiences that drive real results.
           </p>
           <Button 
             size="lg"
-            className="bg-gradient-to-r from-neon-pink to-neon-orange hover:from-neon-orange hover:to-neon-pink text-white px-8 py-6 rounded-lg glow-secondary transition-all duration-300"
+            className="bg-gradient-to-r from-emerald to-lime hover:from-lime hover:to-emerald text-black px-6 py-4 rounded-lg glow-secondary transition-all duration-300"
           >
             Contact Now
           </Button>
@@ -52,20 +52,20 @@ const TeamSection = () => {
             return (
               <div key={index} className="text-center group">
                 <div className="flex justify-center mb-6">
-                  <div className="p-6 bg-gradient-to-br from-neon-purple/10 to-neon-pink/10 rounded-2xl group-hover:from-neon-purple/20 group-hover:to-neon-pink/20 transition-all duration-300">
-                    <Icon className="w-12 h-12 text-neon-purple group-hover:text-neon-pink transition-colors duration-300" />
+                  <div className="p-4 bg-gradient-to-br from-emerald/10 to-mint/10 rounded-xl group-hover:from-emerald/20 group-hover:to-mint/20 transition-all duration-300">
+                    <Icon className="w-8 h-8 text-emerald group-hover:text-mint transition-colors duration-300" />
                   </div>
                 </div>
                 
-                <div className="text-5xl md:text-6xl font-bold text-gradient-hero mb-4">
+                <div className="text-3xl md:text-4xl font-bold text-gradient-hero mb-4">
                   {stat.number}
                 </div>
                 
-                <h3 className="text-xl font-bold mb-4">
+                <h3 className="text-base font-bold mb-4">
                   {stat.title}
                 </h3>
                 
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   {stat.description}
                 </p>
               </div>

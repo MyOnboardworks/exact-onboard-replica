@@ -28,15 +28,15 @@ const ProcessSection = () => {
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">
             How We Work
           </h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-8">
+          <p className="text-base text-muted-foreground max-w-4xl mx-auto mb-6">
             <strong>Our learning process is simple, structured, and effective. Here's how we take you from beginner to job-ready.</strong>
           </p>
           <Button 
             size="lg"
-            className="bg-gradient-to-r from-neon-blue to-neon-cyan hover:from-neon-cyan hover:to-neon-blue text-white px-8 py-6 rounded-lg glow-primary transition-all duration-300"
+            className="bg-gradient-to-r from-neon-green to-mint hover:from-mint hover:to-neon-green text-black px-6 py-4 rounded-lg glow-primary transition-all duration-300"
           >
             Schedule a consultation
           </Button>
@@ -52,28 +52,28 @@ const ProcessSection = () => {
               <div key={index} className={`flex flex-col ${isEven ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12`}>
                 {/* Content */}
                 <div className="flex-1 text-center lg:text-left">
-                  <div className="text-6xl md:text-8xl font-bold text-gradient-hero mb-4 opacity-20">
+                  <div className="text-4xl md:text-5xl font-bold text-gradient-hero mb-4 opacity-20">
                     {step.number}
                   </div>
                   
                   <div className="flex items-center justify-center lg:justify-start mb-6">
-                    <div className="p-4 bg-neon-purple/10 rounded-2xl mr-4">
-                      <Icon className="w-8 h-8 text-neon-purple" />
+                    <div className="p-3 bg-emerald/10 rounded-xl mr-4">
+                      <Icon className="w-6 h-6 text-emerald" />
                     </div>
-                    <h3 className="text-2xl md:text-3xl font-bold">
+                    <h3 className="text-lg md:text-xl font-bold">
                       {step.title}
                     </h3>
                   </div>
                   
-                  <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                  <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0">
                     {step.description}
                   </p>
                 </div>
 
                 {/* Image Placeholder */}
                 <div className="flex-1 max-w-md">
-                  <div className="aspect-square bg-gradient-to-br from-neon-blue/10 to-neon-purple/10 rounded-2xl border border-border flex items-center justify-center">
-                    <Icon className="w-24 h-24 text-neon-blue/50" />
+                  <div className="aspect-square bg-gradient-to-br from-neon-green/10 to-emerald/10 rounded-xl border border-border flex items-center justify-center">
+                    <Icon className="w-16 h-16 text-neon-green/50" />
                   </div>
                 </div>
               </div>

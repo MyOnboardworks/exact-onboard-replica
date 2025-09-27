@@ -10,22 +10,22 @@ const Header = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <div className="text-xl font-bold tracking-wider">
+          <div className="text-lg font-bold tracking-wider">
             ONBOARDWORKS<span className="text-accent">.</span>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-foreground hover:text-accent transition-colors">
+          <nav className="hidden md:flex items-center space-x-6">
+            <a href="#" className="text-sm text-foreground hover:text-accent transition-colors">
               HOME
             </a>
-            <a href="#about-us" className="text-foreground hover:text-accent transition-colors">
+            <a href="#about-us" className="text-sm text-foreground hover:text-accent transition-colors">
               ABOUT US
             </a>
-            <a href="#services" className="text-foreground hover:text-accent transition-colors">
+            <a href="#services" className="text-sm text-foreground hover:text-accent transition-colors">
               SERVICES
             </a>
-            <a href="#contact-us" className="text-foreground hover:text-accent transition-colors">
+            <a href="#contact-us" className="text-sm text-foreground hover:text-accent transition-colors">
               CONTACT US
             </a>
           </nav>
@@ -44,17 +44,17 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden pb-4 border-t border-border mt-4">
-            <div className="flex flex-col space-y-4 pt-4">
-              <a href="#" className="text-foreground hover:text-accent transition-colors">
+            <div className="flex flex-col space-y-3 pt-4">
+              <a href="#" className="text-sm text-foreground hover:text-accent transition-colors">
                 HOME
               </a>
-              <a href="#about-us" className="text-foreground hover:text-accent transition-colors">
+              <a href="#about-us" className="text-sm text-foreground hover:text-accent transition-colors">
                 ABOUT US
               </a>
-              <a href="#services" className="text-foreground hover:text-accent transition-colors">
+              <a href="#services" className="text-sm text-foreground hover:text-accent transition-colors">
                 SERVICES
               </a>
-              <a href="#contact-us" className="text-foreground hover:text-accent transition-colors">
+              <a href="#contact-us" className="text-sm text-foreground hover:text-accent transition-colors">
                 CONTACT US
               </a>
             </div>

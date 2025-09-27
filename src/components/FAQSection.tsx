@@ -38,10 +38,10 @@ const FAQSection = () => {
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">
             FAQs
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base text-muted-foreground max-w-3xl mx-auto">
             Honest answers to common questions. Everything you need to know—no fluff, just facts.
           </p>
         </div>
@@ -53,12 +53,12 @@ const FAQSection = () => {
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="bg-card border border-border rounded-lg px-6 hover:border-neon-blue/50 transition-all duration-300"
+                className="bg-card border border-border rounded-lg px-4 hover:border-neon-green/50 transition-all duration-300"
               >
-                <AccordionTrigger className="text-left text-lg font-semibold hover:text-neon-blue transition-colors">
+                <AccordionTrigger className="text-left text-sm font-semibold hover:text-neon-green transition-colors">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed pt-2">
+                <AccordionContent className="text-xs text-muted-foreground leading-relaxed pt-2">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
