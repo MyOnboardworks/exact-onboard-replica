@@ -43,8 +43,11 @@ const StatsSection = () => {
           <Button 
             size="lg"
             className="mb-16 bg-gradient-to-r from-neon-green to-emerald hover:from-emerald hover:to-lime text-black px-6 py-4 rounded-lg glow-accent transition-all duration-300"
+            asChild
           >
-            Get In Touch
+            <a href="https://wa.me/9882287863?text=I%20want%20to%20learn%20and%20build%20future" target="_blank" rel="noopener noreferrer">
+              Get In Touch
+            </a>
           </Button>
         </div>
 

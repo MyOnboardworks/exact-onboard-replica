@@ -37,8 +37,11 @@ const ProcessSection = () => {
           <Button 
             size="lg"
             className="bg-gradient-to-r from-neon-green to-mint hover:from-mint hover:to-neon-green text-black px-6 py-4 rounded-lg glow-primary transition-all duration-300"
+            asChild
           >
-            Schedule a consultation
+            <a href="https://wa.me/9882287863?text=I%20want%20to%20learn%20and%20build%20future" target="_blank" rel="noopener noreferrer">
+              Schedule a consultation
+            </a>
           </Button>
         </div>
 

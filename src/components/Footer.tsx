@@ -12,11 +12,6 @@ const Footer = () => {
             </p>
           </div>
           
-          <div className="flex items-center space-x-1 text-xs text-muted-foreground">
-            <span>Made in</span>
-            <div className="w-3 h-3 bg-gradient-to-r from-neon-green to-emerald rounded-sm"></div>
-            <span>Webflow</span>
-          </div>
         </div>
       </div>
     </footer>

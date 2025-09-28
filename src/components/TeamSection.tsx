@@ -40,8 +40,11 @@ const TeamSection = () => {
           <Button 
             size="lg"
             className="bg-gradient-to-r from-emerald to-lime hover:from-lime hover:to-emerald text-black px-6 py-4 rounded-lg glow-secondary transition-all duration-300"
+            asChild
           >
-            Contact Now
+            <a href="https://wa.me/9882287863?text=I%20want%20to%20learn%20and%20build%20future" target="_blank" rel="noopener noreferrer">
+              Contact Now
+            </a>
           </Button>
         </div>
 

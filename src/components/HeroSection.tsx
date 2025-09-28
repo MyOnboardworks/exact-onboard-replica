@@ -30,8 +30,11 @@ const HeroSection = () => {
           <Button 
             size="lg" 
             className="bg-gradient-to-r from-neon-green to-emerald hover:from-emerald hover:to-lime text-black px-6 py-4 text-base rounded-lg glow-primary transition-all duration-300"
+            asChild
           >
-            Get Started Today
+            <a href="https://wa.me/9882287863?text=I%20want%20to%20learn%20and%20build%20future" target="_blank" rel="noopener noreferrer">
+              Get Started Today
+            </a>
           </Button>
         </div>
       </div>
