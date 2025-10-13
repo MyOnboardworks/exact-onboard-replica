@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { CheckCircle, XCircle, Search } from "lucide-react";
+import { CheckCircle, XCircle, Search, Loader2 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { fetchCertificatesFromGoogleSheets } from "@/lib/googleSheets";
 
 // Sample certificate database - replace with your Excel/Google Sheets API
 const certificateDatabase = [
@@ -84,10 +85,26 @@ const VerifyDocument = () => {
   const [certificateId, setCertificateId] = useState("");
   const [searchResult, setSearchResult] = useState<any>(null);
   const [isSearched, setIsSearched] = useState(false);
+  const [certificates, setCertificates] = useState(certificateDatabase);
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Fetch certificates from Google Sheets on component mount
+  useEffect(() => {
+    const loadCertificates = async () => {
+      setIsLoading(true);
+      const sheetData = await fetchCertificatesFromGoogleSheets();
+      if (sheetData.length > 0) {
+        setCertificates(sheetData);
+      }
+      setIsLoading(false);
+    };
+    
+    loadCertificates();
+  }, []);
 
   const handleVerify = () => {
     setIsSearched(true);
-    const result = certificateDatabase.find(
+    const result = certificates.find(
       (cert) => cert.id.toLowerCase() === certificateId.toLowerCase().trim()
     );
     setSearchResult(result || null);
@@ -121,23 +138,36 @@ const VerifyDocument = () => {
 
           {/* Search Section */}
           <div className="bg-card border border-border rounded-lg p-8 mb-8">
-            <div className="flex flex-col sm:flex-row gap-4 mb-6">
-              <Input
-                type="text"
-                placeholder="Enter Certificate ID (e.g., OBW2024001)"
-                value={certificateId}
-                onChange={(e) => setCertificateId(e.target.value)}
-                onKeyPress={handleKeyPress}
-                className="flex-1"
-              />
-              <Button
-                onClick={handleVerify}
-                className="bg-gradient-to-r from-neon-green to-emerald hover:from-emerald hover:to-lime text-black px-6"
-              >
-                <Search className="mr-2 h-4 w-4" />
-                Verify
-              </Button>
-            </div>
+            {isLoading ? (
+              <div className="flex items-center justify-center py-8">
+                <Loader2 className="h-8 w-8 animate-spin text-neon-green mr-3" />
+                <span className="text-muted-foreground">Loading certificate database...</span>
+              </div>
+            ) : (
+              <>
+                <div className="flex flex-col sm:flex-row gap-4 mb-6">
+                  <Input
+                    type="text"
+                    placeholder="Enter Certificate ID (e.g., OBW2024001)"
+                    value={certificateId}
+                    onChange={(e) => setCertificateId(e.target.value)}
+                    onKeyPress={handleKeyPress}
+                    className="flex-1"
+                  />
+                  <Button
+                    onClick={handleVerify}
+                    className="bg-gradient-to-r from-neon-green to-emerald hover:from-emerald hover:to-lime text-black px-6"
+                  >
+                    <Search className="mr-2 h-4 w-4" />
+                    Verify
+                  </Button>
+                </div>
+
+                <p className="text-xs text-muted-foreground text-center">
+                  Connected to Google Sheets • {certificates.length} certificates loaded
+                </p>
+              </>
+            )}
 
             {/* Results Section */}
             {isSearched && (
