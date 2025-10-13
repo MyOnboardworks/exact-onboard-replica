@@ -21,6 +21,62 @@ const certificateDatabase = [
     date: "2024-02-20",
     status: "Valid"
   },
+  {
+    id: "OBW2024003",
+    name: "Rahul Kumar",
+    program: "Python Programming",
+    date: "2024-03-10",
+    status: "Valid"
+  },
+  {
+    id: "OBW2024004",
+    name: "Priya Singh",
+    program: "Digital Marketing",
+    date: "2024-03-25",
+    status: "Valid"
+  },
+  {
+    id: "OBW2024005",
+    name: "Michael Chen",
+    program: "UI/UX Design",
+    date: "2024-04-05",
+    status: "Valid"
+  },
+  {
+    id: "OBW2024006",
+    name: "Sarah Williams",
+    program: "Cloud Computing",
+    date: "2024-04-18",
+    status: "Valid"
+  },
+  {
+    id: "OBW2024007",
+    name: "Amit Patel",
+    program: "Machine Learning",
+    date: "2024-05-02",
+    status: "Valid"
+  },
+  {
+    id: "OBW2024008",
+    name: "Emily Johnson",
+    program: "React Development",
+    date: "2024-05-15",
+    status: "Valid"
+  },
+  {
+    id: "OBW2024009",
+    name: "David Brown",
+    program: "Cybersecurity",
+    date: "2024-06-08",
+    status: "Valid"
+  },
+  {
+    id: "OBW2024010",
+    name: "Anjali Sharma",
+    program: "Mobile App Development",
+    date: "2024-06-22",
+    status: "Valid"
+  },
   // Add more certificates here or connect to external data source
 ];
 
