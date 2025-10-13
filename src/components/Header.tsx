@@ -26,7 +26,7 @@ const Header = () => {
               SERVICES
             </a>
             <a href="/verify" className="text-sm text-foreground hover:text-accent transition-colors">
-              VERIFY DOCUMENT
+              VERIFICATIONS
             </a>
             <a href="/#contact-us" className="text-sm text-foreground hover:text-accent transition-colors">
               CONTACT US
@@ -58,7 +58,7 @@ const Header = () => {
                 SERVICES
               </a>
               <a href="/verify" className="text-sm text-foreground hover:text-accent transition-colors">
-                VERIFY DOCUMENT
+                VERIFICATIONS
               </a>
               <a href="/#contact-us" className="text-sm text-foreground hover:text-accent transition-colors">
                 CONTACT US
