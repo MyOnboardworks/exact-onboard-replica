@@ -16,16 +16,19 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#" className="text-sm text-foreground hover:text-accent transition-colors">
+            <a href="/" className="text-sm text-foreground hover:text-accent transition-colors">
               HOME
             </a>
-            <a href="#about-us" className="text-sm text-foreground hover:text-accent transition-colors">
+            <a href="/#about-us" className="text-sm text-foreground hover:text-accent transition-colors">
               ABOUT US
             </a>
-            <a href="#services" className="text-sm text-foreground hover:text-accent transition-colors">
+            <a href="/#services" className="text-sm text-foreground hover:text-accent transition-colors">
               SERVICES
             </a>
-            <a href="#contact-us" className="text-sm text-foreground hover:text-accent transition-colors">
+            <a href="/verify" className="text-sm text-foreground hover:text-accent transition-colors">
+              VERIFY DOCUMENT
+            </a>
+            <a href="/#contact-us" className="text-sm text-foreground hover:text-accent transition-colors">
               CONTACT US
             </a>
           </nav>
@@ -45,16 +48,19 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden pb-4 border-t border-border mt-4">
             <div className="flex flex-col space-y-3 pt-4">
-              <a href="#" className="text-sm text-foreground hover:text-accent transition-colors">
+              <a href="/" className="text-sm text-foreground hover:text-accent transition-colors">
                 HOME
               </a>
-              <a href="#about-us" className="text-sm text-foreground hover:text-accent transition-colors">
+              <a href="/#about-us" className="text-sm text-foreground hover:text-accent transition-colors">
                 ABOUT US
               </a>
-              <a href="#services" className="text-sm text-foreground hover:text-accent transition-colors">
+              <a href="/#services" className="text-sm text-foreground hover:text-accent transition-colors">
                 SERVICES
               </a>
-              <a href="#contact-us" className="text-sm text-foreground hover:text-accent transition-colors">
+              <a href="/verify" className="text-sm text-foreground hover:text-accent transition-colors">
+                VERIFY DOCUMENT
+              </a>
+              <a href="/#contact-us" className="text-sm text-foreground hover:text-accent transition-colors">
                 CONTACT US
               </a>
             </div>
